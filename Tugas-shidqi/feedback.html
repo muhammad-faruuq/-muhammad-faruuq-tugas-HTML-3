@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Form Feedback</h1>
+    <hr>
+    <nav>
+      <a href="index.html">Beranda</a> |
+      <a href="biodata.html">Biodata</a> |
+      <a href="galeri.html">Galeri</a> |
+      <a href="jadwal.html">Jadwal</a>
+    </nav>
+  </header>
+
+  <form action="https://httpbin.org/post" method="POST" class="box">
+    Nama: <input type="bila" name="nama"><br>
+    Umur: <input type="15" name="umur"><br>
+    Email: <input type="shidqianugrahmaulana@gmail.com" name="email"><br><br>
+
+    Jenis Kelamin:
+    <input type="radio" name="gender" value="L"> Laki-laki
+    <input type="radio" name="gender" value="P"> Perempuan<br><br>
+
+    Hobi:
+    <input type="checkbox" name="hobi" value="futsal"> Futsal
+    <input type="checkbox" name="hobi" value="ngoding"> Ngoding<br><br>
+
+    Jurusan:
+    <select name="jurusan">
+      <option>jurus seribu bayang(fang)</option>
+      <option>jurus naga bonar</option>
+    </select><br><br>
+
+    Pesan:<br>
+    <textarea name="semangat syangku" rows="4" cols="40"></textarea><br><br>
+
+    <button type="reset">Reset</button>
+    <button type="submit">Kirim</button>
+  </form>
+</body>
+</html>

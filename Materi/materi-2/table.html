@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 TABLE</title>
+    <style>
+        #table-basic {
+            width: 80%;
+            border-collapse: collapse;
+        }
+        #table-basic td {
+            padding: 6px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #table-basic .bg-header {
+            background-color: blue;
+            color: azure;
+            font-weight:  bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML 5 TABLE</h1>
+    <hr />
+    <h3>Table Basic</h3>
+    <!--<table> memebuat stuktur tabel-->
+    <!-- attr border: memberi garis tepi di tabel-->
+     <table border="1" id="table-basic">
+            <!--<tr> buat baris baru-->
+            <!--<td> buat cell ?kilom data baru-->
+            <!--tips shortcut: tr>td*3 -->
+            <tr class="bg-header">
+                <td>No</td>
+                <td>Nama</td>
+                <td>Hiburan Favorit</td>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Nizar</td>
+                <td>Joging</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Zidan Bana</td>
+                <td>Main (yg penting keluar)</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td><b style="color: blue;">M faruuq</b></td>
+                <td>futsal & sepak bola</td>
+            </tr>
+        </table>
+
+
+        <h3>Table Html</h3>
+        <!--tips shortcut: table>thead+body+tfoot-->
+        <table border="7" style="width: 60%">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tanggal</th>
+                    <th>Nama Barang</th>
+                    <th>Harga Barang</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>22/09/2025</td>
+                    <td>Nasi Padang Kawan Lamo</td>
+                    <td>Rp 10.000</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>24/09/2025</td>
+                    <td>Gorengan</td>
+                    <td>Rp 10.000</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>23/09/2025</td>
+                    <td rowspan="2">Es Teh Desa</td>
+                    <td>Rp 2.500</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>23/09/2025</td>
+                    <td>Rp 2.500</td>
+                    <!--hapus karna ada rospan diatas-->
+                    <!--<td>es teh desa</td>-->
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><b>Total Pengeluaran</b></td>
+                    <td><b>Rp 25.000</b></td>
+                </tr>
+            </tfoot>
+        </table>
+</body>
+</html>
