@@ -1,0 +1,177 @@
+/* ---------- ALERT INFO ---------- */
+/* Alert box dengan posisi relatif */
+.alert {
+  position: relative; /* Parent untuk position absolute */
+  background: #e0f2fe; /* Warna lembut */
+  border: 1px solid #38bdf8;
+  padding: 16px 42px 16px 18px;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #155e75;
+  width: 330px;
+  margin: 32px auto 40px auto;
+  box-shadow: 0 2px 12px 0 rgba(56,189,248,0.11);
+}
+
+/* Tombol X absolute di sudut kanan atas alert */
+.alert .close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 1.35rem;
+  color: #38bdf8;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  transition: background 0.2s;
+}
+
+/* Hover effect tombol X */
+.alert .close:hover {
+  background: #bae6fd;
+}
+
+/* ---------- PROFILE CARD ---------- */
+/* Card profil: flex kolom, center */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  width: 260px;
+  padding: 28px 16px 24px 16px;
+  margin: 0 auto 46px auto;
+  transition: transform 0.2s;
+}
+
+/* Hover: card sedikit membesar */
+.profile-card:hover {
+  transform: scale(1.05);
+}
+
+/* Avatar (foto) di profile card */
+.avatar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar img {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 50%; /* Foto bulat */
+  border: 2px solid #38bdf8;
+  background: #e0f2fe;
+}
+
+/* Badge "Active" di sudut kanan atas foto */
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: #38bdf8;
+  color: #fff;
+  font-size: 0.72rem;
+  border-radius: 9px;
+  padding: 4px 12px;
+  box-shadow: 0 2px 8px rgba(56,189,248,.12);
+  border: 1px solid #e0f2fe;
+}
+
+/* Nama dan jabatan */
+.profile-card h3 {
+  margin: 16px 0 5px 0;
+  font-size: 1.12rem;
+  color: #0f172a;
+  font-weight: bold;
+}
+.profile-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+/* ---------- PRICING CARDS ---------- */
+/* Flexbox container untuk pricing */
+.pricing {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 46px 0 54px 0;
+}
+
+/* Tiap kartu paket harga */
+.plan {
+  background: #fff;
+  border: 2px solid #e5e7eb;
+  border-radius: 14px;
+  width: 210px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  padding: 26px 20px 28px 20px;
+  text-align: center;
+  transition: transform 0.22s, border-color 0.22s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card tengah: highlight Pro */
+.plan.highlight {
+  border-color: #4f46e5;
+  transform: scale(1.05);
+  box-shadow: 0 8px 22px rgba(79,70,229,.11);
+}
+
+/* Judul paket */
+.plan h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.18rem;
+  color: #4f46e5;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+/* Harga */
+.price {
+  color: #0ea5e9;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+/* Daftar fitur */
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+.plan ul li {
+  padding: 6px 0;
+  color: #52525b;
+  font-size: 0.99rem;
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+/* Tombol pilih paket */
+.plan button {
+  background: #38bdf8;
+  color: #fff;
+  padding: 9px 22px;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.98rem;
+  cursor: pointer;
+  margin-top: 6px;
+  font-weight: bold;
+  transition: background 0.18s;
+}
+.plan button:hover {
+  background: #0ea5e9;
+}

@@ -1,0 +1,67 @@
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 250px;
+  width: 250px;
+  border: 2px dashed #333;
+  border-radius: 6px;
+}
+.area {
+  width: 200px;
+  height: 200px;
+  place-content: center;
+}
+
+.area h3,
+.area p {
+  margin: 0 auto;
+}
+.area p {
+  font-size: 14px;
+  color: #666;
+}
+
+#box-a{
+  background: khaki;
+}
+#box-b {
+  background: yellow;
+  padding: 30px;
+}
+#box-c {
+  background: orange;
+  padding: 30px;
+  border: 10px solid #333;
+}
+#box-d {
+  background: orangered;
+  padding: 30px;
+  border: 10px solid #333;
+  margin: 35px;
+}
+/*box-box passitions*/
+#box-static {
+  background: pink;
+  /* default sudah static*/
+  /* possition: static: */
+}
+#box-relative {
+  background: yellowgreen;
+  position: relative;
+  top: 25px;
+  left: 20px;
+}
+#box-absolute {
+  background: tomato;
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+}
+#box-fixed {
+  background: gold;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
