@@ -13,7 +13,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #082037;
+  background-color: #9bc8f5;
   color: #1f2937;
   line-height: 1.8;
   padding: 40px 10%;
@@ -30,7 +30,7 @@ header {
 
 header h1 {
   font-family: 'Merriweather', serif;
-  color: #032c9f;
+  color: #1e3a8a;
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -53,7 +53,7 @@ article {
 }
 
 article h2 {
-  color: #0465f7;
+  color: #1e3a8a;;
   font-size: 1.4rem;
   margin-bottom: 15px;
   font-weight: 600;
@@ -98,12 +98,11 @@ blockquote {
 }
 
 .footer-text p {
-  margin-bottom: 50px;
-  color: #eceef1;
+  margin-bottom: 30px;
 }
 
 .signature {
   font-family: 'BismillahScript', cursive;
   font-size: 50px;
-  color: #ecebeb;
+  color: #b91c1c;
 }
